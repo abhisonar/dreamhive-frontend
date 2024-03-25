@@ -26,8 +26,8 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/dreamer/.next/types/**/*.ts",
-    "../../dist/apps/dreamer/.next/types/**/*.ts",
+    "../../apps/employer/.next/types/**/*.ts",
+    "../../dist/apps/employer/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
