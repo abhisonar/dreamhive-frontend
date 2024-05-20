@@ -36,6 +36,12 @@
       "options": {
         "targetName": "lint"
       }
+    },
+    {
+      "plugin": "@nx/rollup/plugin",
+      "options": {
+        "buildTargetName": "build"
+      }
     }
   ],
   "generators": {
@@ -44,7 +50,17 @@
         "style": "scss",
         "linter": "eslint"
       }
+    },
+    "@nx/react": {
+      "library": {}
     }
   },
-  "nxCloudAccessToken": "OGM1ZmE3ZDAtZTAzMS00MmZkLTg5MjQtOTY5OTI3MGNmYTdjfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "OGM1ZmE3ZDAtZTAzMS00MmZkLTg5MjQtOTY5OTI3MGNmYTdjfHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "@nx/rollup:rollup": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }

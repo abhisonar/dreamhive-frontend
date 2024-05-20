@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dreamhive-frontend/design-system": ["libs/design-system/src/index.ts"],
+      "@dreamhive-frontend/design-systemV2": [
+        "libs/design-systemV2/src/index.ts"
+      ],
+      "@dreamhive-frontend/design-systemV2/server": [
+        "libs/design-systemV2/src/server.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
