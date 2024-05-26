@@ -11,7 +11,26 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/auth"
+        "outputPath": "dist/apps/auth",
+        "postcssConfig": "apps/auth/postcss.config.js"
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "auth:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "auth:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "auth:build:production",
+          "dev": false
+        }
       }
     }
   }

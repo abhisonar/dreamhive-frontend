@@ -1,5 +1,5 @@
-import './global.scss';
-import React from "react";
+import './style.scss';
+import React from 'react';
 
 export const metadata = {
   title: 'Welcome to auth',
@@ -13,12 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <head>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet"/>
-    </head>
-    <body>{children}</body>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
